@@ -1,0 +1,33 @@
+<div id="main">
+
+<center><h2>Edit your detail</h2></center>
+
+<form method="post" action="/editdetail">
+
+  <div class="container">
+    <input id="hidden" type="hidden" name="_method" value="put">
+    <label><b>First Name</b></label>
+    <input type="text" name="fname" value="<%= @user.fname %>" required>
+
+    <label><b>Last Name</b></label>
+    <input type="text" name="lname" value="<%= @user.lname %>" required>
+
+    <label><b>Username</b></label>
+    <input type="text" name="username" value="<%= @user.username %>" required>
+
+    <label><b>Password</b></label>
+    <input type="text" name="password" value="<%= @user.password %>" required>
+
+    <label><b>Age</b></label>
+    <input type="text" name="age" value="<%= @user.age %>" required>
+    
+    <div class="clearfix">
+
+      <button type="submit" class="signupbtn">Update</button>
+      <button type="button" class="cancelbtn"><a href="deleteuser">Delete User</a></button>
+      <button type="button" class="cancelbtn"><a href="home">Your Profile</a></button>
+    </div>
+  </div>
+</form>
+
+</div>

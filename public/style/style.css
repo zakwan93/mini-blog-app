@@ -1,0 +1,146 @@
+ html,body{ 
+ 	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: white;
+}
+
+body, input, textarea, select {
+    font-size: 10.5pt;
+}
+
+body, input, textarea, select {
+    font-size: 11pt;
+}
+
+body, input, textarea, select {
+    font-family: 'Arimo', sans-serif;
+    font-size: 11pt;
+    line-height: 1.5em;
+    color: #4c4c4c;
+}
+
+body {
+    background-color: white;
+    min-width: 960px;
+}
+
+input[type=text], input[type=password], textarea[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}   
+
+
+.homepage #header {
+    padding: 13em 0em;
+}
+
+#header {
+    position: relative;
+    padding: 5em 0em;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#header {
+    position: relative;
+    background: #2a2f27 url(/banner.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+#logo {
+    margin-bottom: 3em;
+    letter-spacing: 2px;
+}
+#logo h1 {
+    color: #FFF;
+    letter-spacing: 4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#logo h1 a {
+    display: block;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-weight: 900;
+    color: #FFF;
+    letter-spacing: 20px;
+}
+
+#logo span {
+    display: block;
+    padding-top: 2em;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: rgba(255,255,255,.5);
+
+}
+
+#nav ul {
+    margin: 0;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+#nav > ul > li {
+    display: inline-block;
+}
+
+#nav li.active a {
+    background: none;
+    border-radius: 40px;
+    border: 2px solid;
+    border-color: rgba(255,255,255,.8);
+    color: #FFF;
+
+}
+
+#nav > ul > li > a, #nav > ul > li > span {
+    display: block;
+    padding: 1em 1.5em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 20px;
+    outline: 0;
+    color: #F8F8FF;
+
+}
+
+#main {
+    padding: 5em 0em 4em 0em;
+}
+
+#main {
+    position: relative;
+    background: #fff;
+}
+
+a:hover {
+background-color: gray;
+
+}
+
