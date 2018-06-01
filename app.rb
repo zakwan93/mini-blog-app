@@ -19,7 +19,7 @@ end
 
 get "/index" do
   @post = Post.last(10)
-  erb :index
+  erb :index 
 end
 
 get "/home" do
