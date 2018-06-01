@@ -40,6 +40,6 @@ one last thing is to use flash we have to use require in our main.rb file
 ###### Syntax
 
 simple exapmple how to use sinatra flash.
-![App Screenshot](../master/public/flashex.png)
+![App Screenshot](../master/public/flash_ex.png)
 
 
