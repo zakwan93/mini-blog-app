@@ -2,7 +2,6 @@ require "sinatra"
 require "sinatra/activerecord"
 require 'sinatra/flash'
 
-set :database, "sqlite3:myblogdb.sqlite3"
 
 require_relative('models/user.rb')
 require_relative('models/post.rb')
