@@ -1,23 +1,52 @@
-<div id="main">
+
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1 style="letter-spacing: 20px; font-size: 50px;">Blog App</h1>
+					<span style="letter-spacing: 20px; font-size: 14px;">Design by ZAKWAN</span>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li><a href="signup">Signup</a></li>
+						<li><a href="login">LogIn</a></li>
+						<!-- <li><a href="home">Recent Blog</a></li> -->
+					</ul>
+				</nav>
+			</div>
+		</div>
 
 
-	<% if @user %>
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="main"> -->
+
+
+<!-- 	< if @user %>
 	<div id="logout">
 		<h3><a href="logout">Logout</a></h3>
 		<h3><a href="editdetail">Edit Profile</a></h3>
 		<h3><a href="profile">Your Blog</a></h3>
 
 	</div>
-	<% end %>
+	< end %> -->
 
+<!-- <center>
+	<h4 style = "letter-spacing: 4px;"> Welcome to a Blog Post App </h4>
+</center> -->
 
-<center>
-	<h1 style = "letter-spacing: 4px;"> Welcome to a Blog Post App </h1>
-</center>
-
-
-<br><br>
-
+<!-- 
 <br>
 <div id="heading">
 	<h1> How to Write a Blog Post: A Simple Formula to Follow </h1>
@@ -37,22 +66,4 @@
 </div>
 <br>
 
-
-
-<hr>
-<% @post.each do |t| %>
-	
-	 <center>
-	<h3 style="color:red;letter-spacing: 2px;"><li>Blog Title - <b> <%= t.title %></b></li></h3>
-	
-	<h3 style="color:867979;letter-spacing: 2px;"> Content </h3><h5 style="font-weight: 300"> <%= t.content %></h5>
-	</center>
-<hr>
-<% end %>
-
-
-<% if @user %>
-<button type="submit"> <a href = "newblog"> Add new Blog </button>
-<% end %>
-
-</div>
+ -->

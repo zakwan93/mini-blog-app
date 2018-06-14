@@ -8,7 +8,7 @@ require_relative('models/post.rb')
 require_relative('models/profile.rb')
 
 enable :sessions
-
+set :session_secret, 'super secret'
 
 
 get "/" do
@@ -22,9 +22,17 @@ get "/index" do
 end
 
 get "/home" do
-  @post = Post.where(user_id: session[:id]).last(10)
+  @user = User.find(session[:id])
+  @post = Post.all
   @user = session[:id]
   erb :home
+end
+
+get "/yourblog" do
+  @user = User.find(session[:id])
+   @post = Post.where(user_id: session[:id]).last(10)
+   @user = session[:id]
+   erb :yourblog
 end
 
 get "/signup" do
@@ -45,7 +53,7 @@ post "/login" do
   @user = User.find_by(username: params[:username],password: params[:password])
   if @user.nil?
   	flash[:alert] = "Wrong Username and Password"
-  	redirect '/home'
+  	redirect '/index'
   	else
   		session[:id] = @user.id 
   		redirect '/home'
@@ -55,7 +63,7 @@ end
 get "/logout" do
 	@user = User.find(session[:id])
 	session.clear
-	erb :logout
+	redirect '/index'
 end
 
 get "/editdetail" do
@@ -84,17 +92,20 @@ delete '/deleteuser' do
 end
 
 get '/newblog' do
+  @user = session[:id]
   erb :newblog
 end
 
 
 post '/newblog' do
+  @user = session[:id]
    @post = Post.create(title: params[:title],content: params[:content],user_id: session[:id])
    
    redirect '/profile'
 end
 
 get '/profile' do
+  @user = User.find(session[:id])
   @post = Post.where(user_id: session[:id])
   erb :profile
 end

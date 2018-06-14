@@ -1,7 +1,7 @@
-<div id="main">
+<div class="container">
 
 <center><h2>Edit your detail</h2></center>
-
+<br>
 <form method="post" action="/editdetail">
 
   <div class="container">
@@ -23,9 +23,23 @@
     
     <div class="clearfix">
 
-      <button type="submit" class="signupbtn">Update</button>
-      <button type="button" class="cancelbtn"><a href="deleteuser">Delete User</a></button>
-      <button type="button" class="cancelbtn"><a href="home">Your Profile</a></button>
+     
+      <div class = "container">
+        <div class="row">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Update</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-6">
+            <a href="deleteuser"><button type="button" class="btn btn-danger">Delete User</button></a>
+          </div>
+          <div class="col-6">
+            <a href="home"><button type="button" class="btn btn-warning">Your Profile</button></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </form>

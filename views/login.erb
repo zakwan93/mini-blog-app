@@ -1,4 +1,4 @@
-<div id="main">
+<div class = "container">
 
 <center>
 <h2>Login Form</h2>
@@ -16,15 +16,29 @@
     
    
 
-    <button type="submit">Login</button>
-    <button type="submit"><a href ="signup">Click here to Signup</a></button>
+    <div class="row">
+      <div class="col-6">
+        <button type="submit" class="btn btn-Success">Log In</button>
+      </div>
+      <div class="col-6">
+          <a href = "signup"><button type="button" class="btn btn-primary">Sign Up</button></a>
+      </div>
+    </div>
 
 
     <input type="checkbox" checked="checked"> Remember me
   </div>
-
-  <div class="container">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
+ <div class="container">
+  <div class="row">
+   
+      <div class="col-6">
+        <a href="index"><button type="button" class="cancelbtn">Cancel</button></a>
+      </div>
+      <div class="col-6">
+        <a href="home">Forget Password?</a>
+      </div>
+    </div>
   </div>
 </form>
+
+

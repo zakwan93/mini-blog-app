@@ -1,16 +1,11 @@
-<h3> Delete User </h3>
-
-
-
-
-<form method="post" action="/deleteuser">
-   
-	<!-- method for put and delete action -->
-   <input id= "hidden" type="hidden" name="_method" value = "delete">
-   <!-- this line -->
-   
-   <input id="submit" type ="submit" value="<%= @user.fname %>">
-</form>
-
-
-
+<div class="container">
+	<div class="container">
+		<h3> Delete User </h3>
+	</div>	
+	<form method="post" action="/deleteuser">
+		<!-- method for put and delete action -->
+	   <input id= "hidden" type="hidden" name="_method" value = "delete">
+	   <!-- this line -->
+	   <button type="submit"  class = "bt btn-danger" value="<%= @user.fname %>" alert = "are you sure"><%= @user.fname %></button>
+	</form>
+</div>

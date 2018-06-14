@@ -1,16 +1,23 @@
-<div id="main">
+<div class="container">
+  <center>
+      <h1> Your Recent Blog  </h1>
+  </center>
+  <br><br>
+  <% @post.each do |t| %>
+    <div class="card">
+      <div class="card-header">
+        Blog of <%= @user.username %>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title"><%= t.title %></h5>
+        <p class="card-text"><%= t.content %></p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      </div>
+    </div>
 
-<hr>
-<% @post.each do |t| %>
-	
-	 <center>
-	<h3 style="color:red;letter-spacing: 2px;"><li>Blog Title - <b> <%= t.title %></b></li></h3>
-	
-	<h3 style="color:867979;letter-spacing: 2px;"> Content </h3><h5 style="font-weight: 300"> <%= t.content %></h5>
-	</center>
-<hr>
-<% end %>
-	<div id="back">
-		<a href="home">Back</a>
-	</div>
+  <% end %>
+  	<div id="back">
+  		<a href="home">Back</a>
+  	</div>
 </div>
+
