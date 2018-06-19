@@ -22,9 +22,8 @@ get "/index" do
 end
 
 get "/home" do
-  @user = User.find(session[:id])
   @post = Post.all
-  @user = session[:id]
+  @user = User.find(session[:id]) 
   erb :home
 end
 
@@ -105,8 +104,8 @@ post '/newblog' do
 end
 
 get '/profile' do
-  @user = User.find(session[:id])
   @post = Post.where(user_id: session[:id])
+  @user = User.find(session[:id])
   erb :profile
 end
 

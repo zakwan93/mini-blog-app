@@ -21,7 +21,7 @@
 		<% @post.each do |t| %>
 		<div class="card">
 		  <div class="card-header">
-		    Blog of 
+		    Blog of <%= t.user.username %>
 		  </div>
 		  <div class="card-body">
 		    <h5 class="card-title"><%= t.title %></h5>
